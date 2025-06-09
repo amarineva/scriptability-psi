@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScriptAbility PSI Service Information</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f5f7fa;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        .success-icon {
+            width: 60px;
+            height: 60px;
+            background-color: #10b981;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+        }
+        
+        .success-icon::after {
+            content: '\2713';
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        h1 {
+            color: #1f2937;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .subtitle {
+            color: #6b7280;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+        
+        .info-section {
+            background-color: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .info-label {
+            color: #4b5563;
+            font-size: 0.875rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+        
+        .url-display {
+            background-color: #1f2937;
+            color: #10b981;
+            padding: 1rem 1.25rem;
+            border-radius: 6px;
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 1rem;
+            word-break: break-all;
+            margin-bottom: 1rem;
+        }
+        
+        .note {
+            color: #6b7280;
+            font-size: 0.875rem;
+            line-height: 1.5;
+            font-style: italic;
+        }
+        
+        .footer {
+            text-align: center;
+            color: #9ca3af;
+            font-size: 0.875rem;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e5e7eb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-icon"></div>
+        
+        <h1>Installation Successful!</h1>
+        <p class="subtitle">ScriptAbility PSI service is now running</p>
+        
+        <div class="info-section">
+            <p class="info-label">Service Endpoint URL</p>
+            <div class="url-display">http://{{LOCAL_IP_ADDRESS}}:18450/receive.php</div>
+            <p class="note">Use this URL in the PioneerRx interface to send prescriptions to ScriptAbility. If the IP above is incorrect, please replace it with this workstation's local IP address.</p>
+        </div>
+        
+        <div class="footer">
+            ScriptAbility PSI &bull; Port 18450 &bull; Windows Service
+        </div>
+    </div>
+</body>
+</html>
