@@ -87,6 +87,3 @@ C:\ScriptAbilityPSI\
 └── logs\                           # Application logs
 ```
 
-## Development
-
-See [CLAUDE.md](CLAUDE.md) for comprehensive development documentation, architecture details, and advanced troubleshooting.
