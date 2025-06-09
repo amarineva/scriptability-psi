@@ -40,7 +40,7 @@ Once installed, the service is accessible at:
 - `http://localhost:18450/receive.php` (local applications)
 - `http://YOUR_IP:18450/receive.php` (remote applications)
 
-The service processes XML POST requests from Pioneer Rx and generates encrypted `.lbl` files in the configured output directory.
+The service processes XML POST requests from Pioneer Rx and generates encrypted `.lbxa` files in the configured output directory.
 
 ### PSI Monitor System Tray 🖥️
 The PSI Monitor provides convenient access to:
