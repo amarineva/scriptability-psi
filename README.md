@@ -4,11 +4,7 @@ A Windows web service for processing pharmaceutical prescription data from Pione
 
 ## Overview
 
-<<<<<<< HEAD
 ScriptAbility PSI receives XML-formatted prescription data, parses it, and generates encrypted label files for external printing systems. It runs as a Windows service combining Apache HTTP Server and PHP, with a convenient system tray application for monitoring and control.
-=======
-ScriptAbility PSI receives XML-formatted prescription data, parses it, and generates encrypted label files for ScriptAbility. It runs as a Windows service combining Apache HTTP Server and PHP.
->>>>>>> 66d34605b8ac78887de1082a10a73f185b196717
 
 ## Installation 🚀
 
@@ -73,7 +69,6 @@ C:\ScriptAbilityPSI\uninstall.exe
 
 - **Service fails to start**: Check `C:\ScriptAbilityPSI\logs\error.log` or use PSI Monitor → Apache Error Logs
 - **Port 18450 in use**: Check with `netstat -an | findstr 18450`
-<<<<<<< HEAD
 - **PSI Monitor not visible**: Restart `C:\ScriptAbilityPSI\ScriptAbilityPSI_Monitor.exe`
 - **Service control issues**: Ensure PSI Monitor is running with proper privileges
 - **Log files won't open**: PSI Monitor automatically handles file locking issues
@@ -95,6 +90,3 @@ C:\ScriptAbilityPSI\
 ## Development
 
 See [CLAUDE.md](CLAUDE.md) for comprehensive development documentation, architecture details, and advanced troubleshooting.
-=======
-- **Installation issues**: Ensure Visual C++ Redistributable is installed
->>>>>>> 66d34605b8ac78887de1082a10a73f185b196717
