@@ -4,7 +4,7 @@ A Windows web service for processing pharmaceutical prescription data from Pione
 
 ## Overview
 
-ScriptAbility PSI receives XML-formatted prescription data, parses it, and generates encrypted label files for external printing systems. It runs as a Windows service combining Apache HTTP Server and PHP, with a convenient system tray application for monitoring and control.
+ScriptAbility PSI receives XML-formatted prescription data, parses it, and generates encrypted label files for ScriptAbility. It runs as a Windows service combining Apache HTTP Server and PHP, with a convenient system tray application for monitoring and control.
 
 ## Installation
 
