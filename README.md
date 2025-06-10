@@ -1,4 +1,4 @@
-# ScriptAbility PSI 💊
+# ScriptAbility PSI
 
 A Windows web service for processing pharmaceutical prescription data from Pioneer Rx pharmacy software, featuring a built-in system tray monitor for easy management.
 
@@ -6,29 +6,19 @@ A Windows web service for processing pharmaceutical prescription data from Pione
 
 ScriptAbility PSI receives XML-formatted prescription data, parses it, and generates encrypted label files for external printing systems. It runs as a Windows service combining Apache HTTP Server and PHP, with a convenient system tray application for monitoring and control.
 
-## Installation 🚀
+## Installation
 
 ### Prerequisites
 - Windows 10/11 or Windows Server
 - Administrator privileges 🔑
 - Visual C++ Redistributable 2015-2022 (x64) - *automatically installed if needed*
 
-### Install Using NSIS Installer (Recommended)
-
-1. Compile the installer:
-   ```batch
-   Scripts\compile_installer.bat
-   ```
-
-2. Run the generated installer as Administrator:
-   ```
-   ScriptAbilityPSI_Setup_1.1.exe
-   ```
+### Installation
 
 The installer will:
 - Install the application to `C:\ScriptAbilityPSI\` with organized directory structure
 - Configure Windows service to start automatically
-- Set up Windows Firewall rules for port 18450 🔥
+- Set up Windows Firewall rules for port 18450 
 - Install PSI Monitor system tray application (starts with Windows)
 - Generate installation information with your PC's IP address
 - Automatically install Visual C++ Redistributable if needed
@@ -40,7 +30,7 @@ Once installed, the service is accessible at:
 - `http://localhost:18450/receive.php` (local applications)
 - `http://YOUR_IP:18450/receive.php` (remote applications)
 
-The service processes XML POST requests from Pioneer Rx and generates encrypted `.lbl` files in the configured output directory.
+The service processes XML POST requests from Pioneer Rx and generates encrypted `.lbxa` files in the configured output directory.
 
 ### PSI Monitor System Tray 🖥️
 The PSI Monitor provides convenient access to:
@@ -87,6 +77,3 @@ C:\ScriptAbilityPSI\
 └── logs\                           # Application logs
 ```
 
-## Development
-
-See [CLAUDE.md](CLAUDE.md) for comprehensive development documentation, architecture details, and advanced troubleshooting.
