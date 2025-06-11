@@ -2,7 +2,7 @@
 ; Requires NSIS 3.0+ with nsExec and Services plugins
 
 !define PRODUCT_NAME "ScriptAbility PSI"
-!define PRODUCT_VERSION "1.1"
+!define PRODUCT_VERSION "1.0"
 !define PRODUCT_PUBLISHER "En-Vision America"
 !define PRODUCT_DIR_REGKEY "Software\Microsoft\Windows\CurrentVersion\App Paths\ScriptAbilityPSI"
 !define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}"
@@ -72,7 +72,7 @@ VIAddVersionKey "ProductVersion" "${PRODUCT_VERSION}"
 VIAddVersionKey "CompanyName" "${PRODUCT_PUBLISHER}"
 VIAddVersionKey "FileDescription" "${PRODUCT_NAME} Installer"
 VIAddVersionKey "FileVersion" "${PRODUCT_VERSION}"
-VIAddVersionKey "LegalCopyright" "© 2024 ${PRODUCT_PUBLISHER}"
+VIAddVersionKey "LegalCopyright" "© 2025 ${PRODUCT_PUBLISHER}"
 
 ; Functions
 Function .onInit
