@@ -118,7 +118,7 @@ namespace ScriptAbilityPSI
             // Create tray icon with improved initialization
             _trayIcon = new NotifyIcon
             {
-                Text = "ScriptAbility PSI Monitor v1.1",
+                Text = "ScriptAbility PSI Monitor v1.0",
                 ContextMenuStrip = _contextMenu,
                 Visible = true
             };
@@ -262,7 +262,7 @@ namespace ScriptAbilityPSI
             var apacheLogPath = GetApacheLogPath();
             var phpLogPath = GetPhpLogPath();
             
-            var aboutInfo = $"ScriptAbility PSI Monitor v1.1\n\n" +
+            var aboutInfo = $"ScriptAbility PSI Monitor v1.0\n\n" +
                           $"Application Information:\n" +
                           $"• Running from: {Application.StartupPath}\n" +
                           $"• Executable: {Application.ExecutablePath}\n\n" +
